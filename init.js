@@ -1,32 +1,33 @@
-#!/usr/bin/env node
+const inquirer = require('inquirer');
+const fs = require('fs-extra');
+const path = require('path');
 
-const inquirer = require('inquirer')
-const fs = require('fs-extra')
-const path = require('path')
-const shell = require('shelljs')
+inquirer.prompt([{
+	type: 'input',
+	name: 'projectName',
+	message: 'Project name:',
+	validate: input => input ? true : 'Project name cannot be empty.'
+}]).then(answers => {
+	const projectName = answers.projectName;
+	const projectPath = path.join(process.cwd(), projectName);
+	const templatePath = path.join(__dirname, 'template');
 
-inquirer
-	.prompt([
-		{
-			type: 'input',
-			name: 'projectName',
-			message: 'Project name:',
-			validate: input => (input ? true : 'Project name cannot be empty.'),
-		},
-	])
-	.then(answers => {
-		const projectName = answers.projectName
-		const projectPath = path.join(process.cwd(), projectName)
+	if (fs.existsSync(projectPath)) {
+		console.error(`A folder with the name ${projectName} already exists.`);
+		process.exit(1);
+	}
 
-		if (fs.existsSync(projectPath)) {
-			console.error(`A folder with the name ${projectName} already exists.`)
-			process.exit(1)
-		}
+	fs.copySync(templatePath, projectPath);
 
-		console.log(`Creating project ${projectName}...`)
-		fs.copySync(path.join(__dirname, 'template'), projectPath)
+	// Read the package.json from the template
+	const packageJsonPath = path.join(projectPath, 'package.json');
+	const packageJson = fs.readJsonSync(packageJsonPath);
 
-		console.log(
-			`Project ${projectName} has been successfully created. Please follow the README instructions to get started.`
-		)
-	})
+	// Modify the project name
+	packageJson.name = projectName;
+
+	// Write the modifications
+	fs.writeJsonSync(packageJsonPath, packageJson, { spaces: 2 });
+
+	console.log(`Project ${projectName} has been successfully created. Please follow the README instructions to get started.`);
+});
