@@ -1,5 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+.idea
 # dependencies
 /node_modules
 /.pnp
@@ -28,7 +28,7 @@ yarn-error.log*
 # vercel
 .vercel
 
-.idea
+../.idea
 pnpm-lock.yaml
 
 .env
@@ -48,3 +48,32 @@ yarn.lock
 !package-lock.json
 
 *.iml
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# dependencies
+template/node_modules
+template/.pnp
+template.pnp.js
+# testing
+template/coverage
+template/.next/
+template/out/
+template/build
+template/.DS_Store
+template/*.pem
+template/npm-debug.log*
+template/yarn-debug.log*
+template/yarn-error.log*
+template/.pnpm-debug.log*
+template/.vercel
+template/../.idea
+template/pnpm-lock.yaml
+template/.env
+template/cypress/reports/junit/
+template/cypress/videos/
+template/cypress/screenshots/
+template/.env.local
+template/cypress.env.json
+template/yarn.lock
+template/!package-lock.json
+template/*.iml
