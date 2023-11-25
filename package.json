@@ -7,6 +7,7 @@
   "bin": {
     "forhives-base": "./init.js"
   },
+  "type": "module",
   "author": "Cinquin Andy",
   "license": "MIT",
   "dependencies": {
