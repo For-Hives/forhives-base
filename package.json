@@ -5,10 +5,7 @@
   "description": "A project initializer for setting up new projects with a custom template. (Use forhives template)",
   "main": "init.js",
   "bin": {
-    "create-my-project": "./init.js"
-  },
-  "scripts": {
-    "start": "node init.js"
+    "forhives-base": "./init.js"
   },
   "author": "Cinquin Andy",
   "license": "MIT",
