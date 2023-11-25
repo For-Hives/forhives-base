@@ -40,17 +40,6 @@ That is the list of technologies that ForHives use.
 > **API Call (postman alternative)**
 > > - [Bruno](https://github.com/usebruno/bruno)
 
-> **Serveur**
->
-> > - [CapRover](https://caprover.com/)
-> > - VPS Linux (Debian)
-> > - [Docker](https://www.docker.com/)
-> > - [Fail2Ban](https://www.fail2ban.org/wiki/index.php/Main_Page)
-> > - [LetsEncrypt](https://letsencrypt.org/)
-> > - [UFW](https://doc.ubuntu-fr.org/ufw)
-> > - [DNS (OVH / CloudFlare)](https://cloudflare.com/)
-
-
 ## Todo list 📝
 - [ ] Change the name of the project
 - [ ] Change the name of the project in the package.json
@@ -62,4 +51,19 @@ That is the list of technologies that ForHives use.
   - [ ] Change the domain name
 - [ ] Change the favicon
 - [ ] Change the loader
-- 
+- [ ] Change the font in the tailwind.config.js
+- [ ] Change the font in styles/globals.css
+- [ ] replace the url in the next.config.js
+- [ ] replace the theme colors in tailwind.config.js
+- [ ] configure your renovate in your github repo / account
+
+## Other options
+- [ ] Add bruno if you need to call an API and you don't want to use postman (and share the confs)
+- [ ] Add a state management if you need it (zustand is a good one)
+- [ ] Add Auth if you need it (next-auth is a good one)
+- [ ] Add a CMS if you need it (strapi/pocketbase are good ones)
+
+
+### Any real project example ??
+> https://github.com/For-Hives/formenu
+> https://github.com/For-Hives/my-makeup
