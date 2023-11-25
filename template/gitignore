@@ -28,7 +28,7 @@ yarn-error.log*
 # vercel
 .vercel
 
-../.idea
+.idea
 pnpm-lock.yaml
 
 .env
