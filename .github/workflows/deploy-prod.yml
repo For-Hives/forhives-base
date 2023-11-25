@@ -1,12 +1,7 @@
 name: Build and Deploy on prod
 
 env:
-  NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
   NEXT_PUBLIC_URL: ${{ secrets.NEXT_PUBLIC_URL }}
-  NEXT_PUBLIC_URL_ALT: ${{ secrets.NEXT_PUBLIC_URL_ALT }}
-  NEXT_PUBLIC_API_TOKEN: ${{ secrets.NEXT_PUBLIC_API_TOKEN }}
-  NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}
-  NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
   NODE_ENV: ${{ secrets.NODE_ENV }}
 
 on:
@@ -42,8 +37,6 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.APP_IMAGE }}
-          build-args: NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_API_URL }}
-            NEXT_PUBLIC_URL=${{ secrets.NEXT_PUBLIC_URL }}
-            NEXT_PUBLIC_URL_ALT=${{ secrets.NEXT_PUBLIC_URL_ALT }}
+          build-args: NEXT_PUBLIC_URL=${{ secrets.NEXT_PUBLIC_URL }}
       - name: Deploy on cap rover
         run: docker run caprover/cli-caprover:latest caprover deploy --caproverUrl "${{ secrets.APP_URL }}" --appToken "${{ secrets.APP_TOKEN }}" --caproverApp "${{ secrets.APP_NAME }}" --imageName "${{ secrets.APP_IMAGE }}"
