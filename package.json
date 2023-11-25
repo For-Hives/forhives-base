@@ -1,0 +1,20 @@
+{
+  "name": "forhives-base",
+  "version": "1.0.3",
+  "private": false,
+  "description": "A project initializer for setting up new projects with a custom template. (Use forhives template)",
+  "main": "init.js",
+  "bin": {
+    "create-my-project": "./init.js"
+  },
+  "scripts": {
+    "start": "node init.js"
+  },
+  "author": "Cinquin Andy",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "9.2.12",
+    "fs-extra": "11.1.1",
+    "shelljs": "0.8.5"
+  }
+}

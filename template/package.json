@@ -3,13 +3,13 @@
   "version": "1.0.2",
   "private": false,
   "scripts": {
-    "dev": "../node_modules/.bin/next dev",
-    "build": "../node_modules/.bin/next build",
-    "start": "../node_modules/.bin/next start",
-    "lint": "../node_modules/.bin/next lint",
-    "prettier": "../node_modules/.bin/prettier --write .",
-    "precommit": "../node_modules/.bin/lint-staged",
-    "prepare": "../node_modules/.bin/husky install"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "precommit": "lint-staged",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.js": [
