@@ -49,3 +49,17 @@ That is the list of technologies that ForHives use.
 > > - [LetsEncrypt](https://letsencrypt.org/)
 > > - [UFW](https://doc.ubuntu-fr.org/ufw)
 > > - [DNS (OVH / CloudFlare)](https://cloudflare.com/)
+
+
+## Todo list 📝
+- [ ] Change the name of the project
+- [ ] Change the name of the project in the package.json
+- [ ] Change the name of the project in the README.md
+- [ ] Follow the first guide for GitHub CI 
+- [ ] Follow the second guide for CapRover install & config
+- [ ] Change the app/layout.js
+  - [ ] Change the font
+  - [ ] Change the domain name
+- [ ] Change the favicon
+- [ ] Change the loader
+- 

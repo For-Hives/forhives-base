@@ -1,3 +1,4 @@
+// fixme change the loader component
 export function LoaderComponent() {
 	return (
 		<div className={'flex h-screen w-screen items-center justify-center'}>
