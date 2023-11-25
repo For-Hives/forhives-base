@@ -1,23 +1,7 @@
 # ForHives tech base stack - Template 🐝
-
-## A boiler plate with a complete stack : next, tailwind, bruno, renovate, husky, eslint, prettier, github ci, caprover, docker
-## How to run ??
-
-> **(use pnpm // npm // yarn but don't push the lock file)**
-
-#### _dev_
-
-```
-git clone
--> add .env file
--> add .env file in .bruno folder
-pnpm install
-pnpm run dev
-pnpm run build
-```
+A boiler plate with a complete stack : next, tailwind, bruno, renovate, husky, eslint, prettier, github ci, caprover, docker
 
 ## Tech stack 💻
-
 That is the list of technologies that ForHives use.
 
 > **Front**
@@ -68,3 +52,13 @@ That is the list of technologies that ForHives use.
 ### Any real project example ??
 > https://github.com/For-Hives/formenu
 > https://github.com/For-Hives/my-makeup
+
+#### _dev_
+```
+git clone
+-> add .env file
+-> add .env file in .bruno folder
+pnpm install
+pnpm run dev
+pnpm run build
+```
