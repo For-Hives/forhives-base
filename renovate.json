@@ -10,15 +10,4 @@
             "automergeStrategy": "squash"
         }
     ],
-    "regexManagers": [
-        {
-            "fileMatch": ["^template.json$"],
-            "matchStringsStrategy": "recursive",
-            "matchStrings": [
-                "\"dependencies\":\\s*\\{[^}]*}",
-                "\"(?<depName>.*)\"[^\"]*:\\s*\"(?<currentValue>.*)\""
-            ],
-            "datasourceTemplate": "npm"
-        }
-    ]
 }
