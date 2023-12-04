@@ -8,6 +8,10 @@
             "automerge": true,
             "automergeType": "pr",
             "automergeStrategy": "squash"
+        },
+        {
+            "fileMatch": ["^template/package\\.json$"],
+            "matchDepTypes": ["dependencies", "devDependencies"]
         }
-    ],
+    ]
 }
