@@ -10,8 +10,12 @@
             "automergeStrategy": "squash"
         },
         {
-            "fileMatch": ["^template/package\\.json$"],
-            "matchDepTypes": ["dependencies", "devDependencies"]
+            "paths": ["package.json"],
+            "labels": ["dir1"]
+        },
+        {
+            "paths": ["template/package.json"],
+            "labels": ["dir2"]
         }
     ]
 }
