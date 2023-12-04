@@ -15,6 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        name: "Git config"
+      - run: |
+          git config --local user.email "cinquin.andy@gmail.com"
+          git config --local user.name "Andy Cinquin"
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
