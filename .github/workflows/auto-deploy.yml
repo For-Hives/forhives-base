@@ -1,32 +1,41 @@
 name: Auto deploy - upgrade dependencies and publish
 
 on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - '**/package.json'
   pull_request:
+    types: [ closed ]
     branches:
       - main
+
 jobs:
   publish:
-    if: "!contains(github.event.head_commit.message, 'Upgrade to')"
+    if: github.event.pull_request.merged == true && startsWith(github.head_ref, 'renovate/')
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        name: "Git config"
-      - run: |
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main # Ensure working on the main branch
+
+      - name: Configure Git
+        run: |
           git config --local user.email "cinquin.andy@gmail.com"
           git config --local user.name "Andy Cinquin"
+
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
-      - run: npm version patch -m "Upgrade to %s due to dependency updates"
-      - run: git push origin main
-      - run: npm publish
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Increment Package Version
+        run: |
+          npm version patch -m "Upgrade to %s due to dependency updates"
+          git push origin main
+
+      - name: Publish to NPM
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
