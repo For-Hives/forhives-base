@@ -1,4 +1,4 @@
-name: Auto deploy
+name: Auto deploy - upgrade dependencies and publish
 
 on:
   push:
