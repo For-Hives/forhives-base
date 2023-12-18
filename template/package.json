@@ -28,7 +28,7 @@
     "@hookform/resolvers": "3.3.2",
     "@nextui-org/react": "2.2.9",
     "framer-motion": "10.16.16",
-    "sharp": "0.33.0"
+    "sharp": "0.33.1"
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.10",
