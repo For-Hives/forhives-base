@@ -34,8 +34,6 @@ That is the list of technologies that ForHives use.
 
 ### Any real project example ??
 > https://github.com/For-Hives/formenu  
-> https://github.com/For-Hives/my-makeup  
-
-## How to publish it on npm ? 📦
-> - `npm login`
-> - `npm publish --access public`
+> https://github.com/For-Hives/my-makeup
+> https://github.com/CinquinAndy/mariage-mae
+> https://github.com/CinquinAndy/PortefolioV6
