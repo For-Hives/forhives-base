@@ -15,6 +15,12 @@ That is the list of technologies that ForHives use.
 > > - [EsLint](https://eslint.org/)
 > > - [Husky](https://typicode.github.io/husky/#/)
 
+> **CSS possibilities**
+> > - [Next UI](https://nextui.org/)
+> > - [Shadncn](https://ui.shadcn.com/)
+> > - [Catalyst](https://catalyst.tailwindui.com/docs)
+> > - [DaisyUI](https://daisyui.com/)
+
 > **CI/CD**
 >
 > > - GitHub CI
