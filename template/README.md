@@ -14,6 +14,12 @@ That is the list of technologies that ForHives use.
 > > - [EsLint](https://eslint.org/)
 > > - [Husky](https://typicode.github.io/husky/#/)
 
+> **CSS possibilities**
+> > - [Next UI](https://nextui.org/)
+> > - [Shadncn](https://ui.shadcn.com/)
+> > - [Catalyst](https://catalyst.tailwindui.com/docs)
+> > - [DaisyUI](https://daisyui.com/)
+
 > **CI/CD**
 >
 > > - GitHub CI
@@ -40,7 +46,8 @@ That is the list of technologies that ForHives use.
 - [ ] Change the font in styles/globals.css
 - [ ] replace the url in the next.config.js
 - [ ] replace the theme colors in tailwind.config.js
-- [ ] configure your renovate in your github repo / account
+- [ ] configure your renovate bot in your github repo / account
+- [ ] lets go to dev your project !
 
 ## Other options
 - [ ] Add bruno if you need to call an API and you don't want to use postman (and share the confs)
@@ -50,8 +57,10 @@ That is the list of technologies that ForHives use.
 
 
 ### Any real project example ??
-> https://github.com/For-Hives/formenu
+> https://github.com/For-Hives/formenu  
 > https://github.com/For-Hives/my-makeup
+> https://github.com/CinquinAndy/mariage-mae
+> https://github.com/CinquinAndy/PortefolioV6
 
 #### _dev_
 ```
