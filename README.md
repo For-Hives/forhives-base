@@ -16,10 +16,10 @@ That is the list of technologies that ForHives use.
 > > - [Husky](https://typicode.github.io/husky/#/)
 
 > **CSS possibilities**
-> > - [Next UI](https://nextui.org/)
-> > - [Shadncn](https://ui.shadcn.com/)
-> > - [Catalyst](https://catalyst.tailwindui.com/docs)
-> > - [DaisyUI](https://daisyui.com/)
+> > - [Next UI](https://nextui.org/) -> more speed, more efficient, if you don't want to build custom component, and just use a component library
+> > - [Shadncn](https://ui.shadcn.com/) -> if you want to build custom component, and get much control
+> > - [Catalyst](https://catalyst.tailwindui.com/docs) -> tailwindui components (official tailwind source)
+> > - [DaisyUI](https://daisyui.com/) -> alternative to Next UI
 
 > **CI/CD**
 >
@@ -30,7 +30,7 @@ That is the list of technologies that ForHives use.
 > > - [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction)
 
 > **API Call (postman alternative)**
-> > - [Bruno](https://github.com/usebruno/bruno)
+> > - [Bruno](https://github.com/usebruno/bruno) (or postman // insomnia, bruno is usefull to build a versionning system about your api calls') 
 
 ### Any real project example ??
 > https://github.com/For-Hives/formenu  
