@@ -1,6 +1,17 @@
 # ForHives tech base stack - Template 🐝
 A boiler plate with a complete stack : next, tailwind, bruno, renovate, husky, eslint, prettier, github ci, caprover, docker
 
+#### _dev_
+```
+git clone
+-> add .env file
+-> add .env file in .bruno folder
+// bruno can't access to the general .env file
+npm install
+npm run dev
+npm run build
+```
+
 ## Tech stack 💻
 That is the list of technologies that ForHives use.
 
@@ -15,10 +26,10 @@ That is the list of technologies that ForHives use.
 > > - [Husky](https://typicode.github.io/husky/#/)
 
 > **CSS possibilities**
-> > - [Next UI](https://nextui.org/)
-> > - [Shadncn](https://ui.shadcn.com/)
-> > - [Catalyst](https://catalyst.tailwindui.com/docs)
-> > - [DaisyUI](https://daisyui.com/)
+> > - [Next UI](https://nextui.org/) -> more speed, more efficient, if you don't want to build custom component, and just use a component library
+> > - [Shadncn](https://ui.shadcn.com/) -> if you want to build custom component, and get much control
+> > - [Catalyst](https://catalyst.tailwindui.com/docs) -> tailwindui components (official tailwind source)
+> > - [DaisyUI](https://daisyui.com/) -> alternative to Next UI
 
 > **CI/CD**
 >
@@ -29,7 +40,8 @@ That is the list of technologies that ForHives use.
 > > - [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction)
 
 > **API Call (postman alternative)**
-> > - [Bruno](https://github.com/usebruno/bruno)
+> > - [Bruno](https://github.com/usebruno/bruno) (or postman // insomnia, bruno is usefull to build a versionning system about your api calls') 
+
 
 ## Todo list 📝
 - [ ] Change the name of the project
@@ -54,6 +66,7 @@ That is the list of technologies that ForHives use.
 - [ ] Add a state management if you need it (zustand is a good one)
 - [ ] Add Auth if you need it (next-auth is a good one)
 - [ ] Add a CMS if you need it (strapi/pocketbase are good ones)
+- [ ] Add Zod if you need to control the form states more efficiently and take control about the call from an API
 
 
 ### Any real project example ??
@@ -62,12 +75,3 @@ That is the list of technologies that ForHives use.
 > https://github.com/CinquinAndy/mariage-mae
 > https://github.com/CinquinAndy/PortefolioV6
 
-#### _dev_
-```
-git clone
--> add .env file
--> add .env file in .bruno folder
-pnpm install
-pnpm run dev
-pnpm run build
-```
