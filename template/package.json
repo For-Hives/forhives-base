@@ -27,7 +27,7 @@
     "@headlessui/react": "1.7.18",
     "@hookform/resolvers": "3.3.4",
     "@nextui-org/react": "2.3.5",
-    "framer-motion": "11.0.28",
+    "framer-motion": "11.1.7",
     "sharp": "0.33.3"
   },
   "devDependencies": {
