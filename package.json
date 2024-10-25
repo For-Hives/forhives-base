@@ -1,6 +1,6 @@
 {
   "name": "forhives-base",
-  "version": "1.0.84",
+  "version": "1.0.85",
   "private": false,
   "description": "A project initializer for setting up new projects with a custom template. (Use forhives template)",
   "main": "init.js",
