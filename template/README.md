@@ -1,77 +1,105 @@
-# ForHives tech base stack - Template 🐝
-A boiler plate with a complete stack : next, tailwind, bruno, renovate, husky, eslint, prettier, github ci, caprover, docker
+# ForHives App
 
-#### _dev_
+Modern Next.js 16 template with the latest stack.
+
+## Stack
+
+- **Framework**: Next.js 16 + React 19
+- **Styling**: Tailwind CSS 4 + shadcn/ui
+- **Linting/Formatting**: Biome
+- **State Management**: Zustand
+- **Validation**: Valibot
+- **Backend**: PocketBase
+- **AI**: Vercel AI SDK (multi-provider)
+- **Package Manager**: Bun
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js >= 20.0.0
+- Bun >= 1.3.x (recommended) or npm/yarn
+- PocketBase instance (optional, for backend features)
+
+### Installation
+
+```bash
+bun install
 ```
-git clone
--> add .env file
--> add .env file in .bruno folder
-// bruno can't access to the general .env file
-npm install
-npm run dev
-npm run build
+
+### Development
+
+```bash
+bun run dev
 ```
 
-## Tech stack 💻
-That is the list of technologies that ForHives use.
+Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-> **Front**
->
-> > - [NextJs (ReactJS)](https://nextjs.org/)
-> > - [TailwindCSS](https://tailwindcss.com/)
-> > - [TailwindUI](https://tailwindui.com/)
-> > - [HeadlessUI](https://headlessui.com/)
-> > - [Prettier](https://prettier.io/)
-> > - [EsLint](https://eslint.org/)
-> > - [Husky](https://typicode.github.io/husky/#/)
+### Build
 
-> **CSS possibilities**
-> > - [Next UI](https://nextui.org/) -> more speed, more efficient, if you don't want to build custom component, and just use a component library
-> > - [Shadncn](https://ui.shadcn.com/) -> if you want to build custom component, and get much control
-> > - [Catalyst](https://catalyst.tailwindui.com/docs) -> tailwindui components (official tailwind source)
-> > - [DaisyUI](https://daisyui.com/) -> alternative to Next UI
+```bash
+bun run build
+bun run start
+```
 
-> **CI/CD**
->
-> > - GitHub CI
-> > - [Renovate](https://www.mend.io/renovate/)
+### Linting & Formatting
 
-> **State management**
-> > - [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction)
+```bash
+# Check for issues
+bun run lint
 
-> **API Call (postman alternative)**
-> > - [Bruno](https://github.com/usebruno/bruno) (or postman // insomnia, bruno is usefull to build a versionning system about your api calls') 
+# Auto-fix issues
+bun run check
 
+# Format code
+bun run format
+```
 
-## Todo list 📝
-- [ ] Change the name of the project
-- [ ] Change the name of the project in the package.json
-- [ ] Change the name of the project in the README.md
-- [ ] Follow the first guide for GitHub CI 
-- [ ] Follow the second guide for CapRover install & config
-- [ ] Change the app/layout.js
-  - [ ] Change the font
-  - [ ] Change the domain name
-- [ ] Change the favicon
-- [ ] Change the loader
-- [ ] Change the font in the tailwind.config.js
-- [ ] Change the font in styles/globals.css
-- [ ] replace the url in the next.config.js
-- [ ] replace the theme colors in tailwind.config.js
-- [ ] configure your renovate bot in your github repo / account
-- [ ] lets go to dev your project !
+## Configuration
 
-## Other options
-- [ ] Add bruno if you need to call an API and you don't want to use postman (and share the confs)
-- [ ] Add a state management if you need it (zustand is a good one)
-- [ ] Add Auth if you need it (next-auth is a good one)
-- [ ] Add a CMS if you need it (strapi/pocketbase are good ones)
-- [ ] Add Zod if you need to control the form states more efficiently and take control about the call from an API
+### Environment Variables
 
+Copy `.env.example` to `.env.local` and fill in your values:
 
-### Any real project example ??
-> https://github.com/For-Hives/formenu  
-> https://github.com/For-Hives/my-makeup
-> https://github.com/CinquinAndy/mariage-mae
-> https://github.com/CinquinAndy/PortefolioV6
+```bash
+cp .env.example .env.local
+```
 
+| Variable | Description |
+|----------|-------------|
+| `PB_URL` | PocketBase server URL |
+| `PB_TOKEN` | PocketBase admin token (optional) |
+| `GOOGLE_GENERATIVE_AI_API_KEY` | Google AI API key |
+| `OPENAI_API_KEY` | OpenAI API key |
+| `ANTHROPIC_API_KEY` | Anthropic API key |
+
+### shadcn/ui Components
+
+Add new components with:
+
+```bash
+bunx shadcn@latest add <component-name>
+```
+
+## Project Structure
+
+```
+src/
+├── app/                 # Next.js App Router
+│   ├── globals.css      # Tailwind + shadcn theme
+│   ├── layout.tsx       # Root layout
+│   ├── page.tsx         # Home page
+│   └── providers.tsx    # React providers
+├── components/
+│   └── ui/              # shadcn components
+├── hooks/               # Custom React hooks
+├── lib/
+│   ├── utils.ts         # Utility functions (cn)
+│   └── validations/     # Valibot schemas
+├── services/            # PocketBase & API services
+└── stores/              # Zustand stores
+```
+
+## License
+
+MIT
