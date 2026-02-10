@@ -11,7 +11,7 @@
     "check": "biome check . --write"
   },
   "dependencies": {
-    "@ai-sdk/anthropic": "3.0.39",
+    "@ai-sdk/anthropic": "3.0.40",
     "@ai-sdk/google": "3.0.23",
     "@ai-sdk/openai": "3.0.26",
     "@ai-sdk/react": "3.0.80",
