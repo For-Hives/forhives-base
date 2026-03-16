@@ -11,7 +11,7 @@
   "author": "Cinquin Andy",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "13.3.0",
+    "inquirer": "13.3.2",
     "fs-extra": "11.3.4"
   },
   "files": [
