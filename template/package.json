@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@ai-sdk/anthropic": "3.0.63",
-    "@ai-sdk/google": "3.0.43",
+    "@ai-sdk/google": "3.0.52",
     "@ai-sdk/openai": "3.0.41",
     "@ai-sdk/react": "3.0.118",
     "@radix-ui/react-dialog": "1.1.15",
