@@ -13,7 +13,7 @@
   "dependencies": {
     "@ai-sdk/anthropic": "3.0.96",
     "@ai-sdk/google": "3.0.91",
-    "@ai-sdk/openai": "3.0.83",
+    "@ai-sdk/openai": "3.0.84",
     "@ai-sdk/react": "3.0.224",
     "@radix-ui/react-dialog": "1.1.17",
     "@radix-ui/react-popover": "1.1.17",
